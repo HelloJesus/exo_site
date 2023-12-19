@@ -1,0 +1,220 @@
+.sign-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 4px 0px 4px 0px;
+    width: 81px;
+    height: 22px;
+    background: linear-gradient(90deg, #58CFE9 0%, #C891FF 100%);
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+}
+
+.user-login {
+    position: relative;
+    user-select: none;
+    margin-left: 5px;
+}
+
+.user-login__select-list {
+    width: 82%;
+    margin-top: 1px;
+    margin-right: 5px;
+    font-family: 'Geometria';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #2F3640;
+}
+
+.user-login__select-list.open {
+    overflow: hidden;
+}
+
+.user-login__btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    padding: 4px 0px 4px 7px;
+    width: 168px;
+    height: 22px;
+    background: linear-gradient(90deg, #58CFE9 0%, #C891FF 100%);
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+}
+
+.user-login__icon {
+    margin-right: 10px;
+}
+
+
+/* .login-link:after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: inherit;
+    height: inherit;
+    border: 1px solid;
+    border-radius: 7px;
+    background: linear-gradient(90deg, #58CFE9, #C891FF);
+    z-index: -1;
+} */
+
+
+
+
+
+/* box-form */
+.auth-box {
+    max-width: 796px;
+    height: auto;
+    margin: 45px auto 0px auto;
+    padding: 69px 10px 54px 10px;
+    background-image: url('../images/bg-mini.png');
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50px;
+}
+
+.auth-box__content {
+    padding: 24px 12px 27px 12px;
+    margin: auto;
+    max-width: 445px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 4px 4px 30px rgba(0, 104, 201, 0.1);
+    border-radius: 15px;
+}
+
+.auth-box__title {
+    margin-bottom: 32px;
+    font-family: 'Geometria';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25;
+    color: #000000;
+    text-align: center;
+}
+
+
+/* Overlay */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transition: all 0.2s ease;
+}
+
+.overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    max-width: 514px;
+    height: auto;
+    margin: 252px auto 0px auto;
+    padding: 30px 25px 19px 25px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.popup__text {
+    font-family: 'Geometria';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #2F3640;
+}
+
+.popup__btn {
+    display: block;
+    margin: 30px auto 0px auto;
+    padding: 12px 30px 14px 30px;
+    background: linear-gradient(90deg, #01B3DA 0%, #3ED75F 100%);
+    border-radius: 15px;
+    border: none;
+    font-family: 'Geometria';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+
+/* Login */
+
+.link-res {
+    display: inline-block;
+    margin: 5px 0px 18px 34px;
+    text-decoration: none;
+    font-family: 'Geometria';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.23;
+    color: #2F3640;
+}
+
+.login-msg {
+    min-height: 40px;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.login-error {
+    padding: 9px 5px 9px 14px;
+    background: rgba(235, 3, 5, 0.24);
+    border: 2px solid #EB0305;
+}
+
+.login-accept {
+    background: rgba(18, 184, 2, 0.24);
+    border: 2px solid #12B802;
+    border-radius: 5px;
+}
+
+.login-msg__text {
+    font-family: 'Geometria';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+    color: #2F3640;
+}
+
+.login-msg__img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+
+/* mobile verification */
+
+.auth-box__title.mb--s {
+    margin-bottom: 20px;
+}

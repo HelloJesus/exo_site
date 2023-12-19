@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exontus v2</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+
+<body>
+    <div class="overlay active" id="popup">
+        <div class="popup">
+            <div class="popup__text">The compilance team is reviewing your account and will get back to you as soon as
+                possible
+            </div>
+            <button class="popup__btn">OK</button>
+        </div>
+    </div>
+    <header>
+        <div class="header__inner header__inner--bg">
+            <div class="nav-wrapper row space-between">
+                <img src="../images/logo.svg" alt="" class="logo">
+                <nav class="nav row space-between">
+                    <div class="nav__item">
+                        <a href="" class="nav__link">HOME</a>
+                    </div>
+                    <ul class="nav__list row space-between">
+                        <li class="nav__item">
+                            <a href="" class="nav__link">CURRENCIES</a>
+                        </li>
+                        <li class="nav__item triangle-bottom">
+                            <p href="" class="nav__link">SERVICES</p>
+                            <ul class="triangle-bottom__select-list">
+                                <li class="triangle-bottom__list-item">
+                                    <a href="#">Buy</a>
+                                </li>
+                                <li class="triangle-bottom__list-item">
+                                    <a href="#">Sell</a>
+                                </li>
+                                <li class="triangle-bottom__list-item">
+                                    <a href="#">Exchange</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">ABOUT US</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">CONTACT</a>
+                        </li>
+                        <li class="nav__item nav__item-box row">
+                            <img src="../images/tg-img.png" class="nav__img">
+                            <a href="" class="nav__link">OUR BOT</a>
+                        </li>
+                    </ul>
+                    <div class="user-login" id="selectInput">
+                        <div class="nav__item user-login__btn">
+                            <img class="user-login__icon" src="../images/user_abuser.svg">
+                            <a class="nav__link">user abuser</a>
+                        </div>
+                        <ul class="select-list user-login__select-list" id="selectList">
+                            <li class="select__list-item">
+                                <a href="#">Profile</a>
+                            </li>
+                            <li class="select__list-item"><a href="#">User Verification</a></li>
+                            <li class="select__list-item"><a href="#">Log Out</a></li>
+                        </ul>
+                        <!-- <div class="nav__item login-link">
+                                <a href="" class="nav__link">LOG IN</a>
+                            </div> -->
+                    </div>
+                    <div class="nav__toggler">
+                        <span class="nav__toggler-line"></span>
+                        <span class="nav__toggler-line"></span>
+                        <span class="nav__toggler-line"></span>
+                    </div>
+                </nav>
+                <div class="nav-mobile">
+                    <div class="nav__item">
+                        <a href="" class="nav__link">HOME</a>
+                    </div>
+                    <ul class="nav__list-mobile">
+                        <li class="nav__item">
+                            <a href="" class="nav__link">CURRENCIES</a>
+                        </li>
+                        <li class="nav__item triangle-bottom">
+                            <p href="" class="nav__link">SERVICES</p>
+                            <ul class="triangle-bottom__select-list">
+                                <li class="triangle-bottom__list-item">
+                                    <a href="#">Buy</a>
+                                </li>
+                                <li class="triangle-bottom__list-item">
+                                    <a href="#">Sell</a>
+                                </li>
+                                <li class="triangle-bottom__list-item">
+                                    <a href="#">Exchange</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">ABOUT US</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">CONTACT</a>
+                        </li>
+                        <li class="nav__item nav__item-box row">
+                            <img src="../images/tg-img.png" class="nav__img">
+                            <a href="" class="nav__link">OUR BOT</a>
+                        </li>
+                    </ul>
+                    <div class="user-login" id="selectInput">
+                        <div class="nav__item user-login__btn">
+                            <img class="user-login__icon" src="../images/user_abuser.svg">
+                            <a class="nav__link">user abuser</a>
+                        </div>
+                        <ul class="select-list user-login__select-list" id="selectList">
+                            <li class="select__list-item">
+                                <a href="#">Profile</a>
+                            </li>
+                            <li class="select__list-item"><a href="#">User Verification</a></li>
+                            <li class="select__list-item"><a href="#">Log Out</a></li>
+                        </ul>
+                        <!-- <div class="nav__item login-link">
+                                                                        <a href="" class="nav__link">LOG IN</a>
+                                                                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="info-wrapper">
+        <div class="info">
+            <div class="info__bar">
+                <div class="info__groups row space-between">
+                    <div class="info__group">
+                        <h3 class="info__group-title used">
+                            Personal Info
+                        </h3>
+                        <h3 class="info__group-title used">
+                            (Required)
+                        </h3>
+                    </div>
+                    <div class="info__group">
+                        <h3 class="info__group-title used">
+                            Questionnaire
+                        </h3>
+                        <h3 class="info__group-title used">
+                            (Required)
+                        </h3>
+                    </div>
+                    <div class="info__group">
+                        <h3 class="info__group-title used">
+                            User Verification
+                        </h3>
+                        <h3 class="info__group-title used">
+                            (Required)
+                        </h3>
+                    </div>
+                    <div class="info__group">
+                        <h3 class="info__group-title active">
+                            Status&Approval
+                        </h3>
+                    </div>
+                </div>
+                <div class="info__road info__road--width--l">
+
+                </div>
+            </div>
+
+            <h2 class="info__title">Status&Approval</h2>
+            <p class="info__desc info__desc-status">You’re almost there!</p>
+            <div class="info__cards grid space-between">
+                <div class="info__card">
+                    <div class="info__card-main">
+                        <div class="info__card-status
+                                info__card-status--completed">
+                            <img src="../images/status&approvalAccept.svg" class="info__card-status-img"
+                                id="imgCompleted">
+                        </div>
+                        <img src="../images/status&approvalAvatar.png" class="info__card-img">
+                        <h3 class="info__card-title">Personal Info</h3>
+                    </div>
+                    <div class="info__card-footer
+                            info__card-footer--completed">
+                        <h3 class="info__card-title
+                                info__card-footer-title">completed</h3>
+                    </div>
+                </div>
+                <div class="info__card">
+                    <div class="info__card-main">
+                        <div class="info__card-status
+                                info__card-status--completed">
+                            <img src="../images/status&approvalAccept.svg" class="info__card-status-img"
+                                id="imgCompleted">
+                        </div>
+                        <img src="../images/status&approvalNote.png" class="info__card-img">
+                        <h3 class="info__card-title">Questonnaire</h3>
+                    </div>
+                    <div class="info__card-footer
+                            info__card-footer--completed">
+                        <h3 class="info__card-title
+                                info__card-footer-title">completed</h3>
+                    </div>
+                </div>
+                <div class="info__card">
+                    <div class="info__card-main">
+                        <div class="info__card-status
+                                ">
+                            <img src="../images/status&approvalNotAccept.svg" class="info__card-status-img"
+                                id="imgCompleted">
+                        </div>
+                        <div class="info__card-cycle">
+                            <img src="../images/status&approvalBigAccept.svg">
+                            </img>
+                        </div>
+                        <h3 class="info__card-title">User Verification</h3>
+                    </div>
+                    <div class="info__card-footer
+                            info__card-footer--pending">
+                        <h3 class="info__card-title
+                                info__card-footer-title">Pending</h3>
+                    </div>
+                </div>
+                <div class="info__card">
+                    <div class="info__card-main">
+                        <div class="info__card-status
+                                info__card-status--completed">
+                            <img src="../images/status&approvalAccept.svg" class="info__card-status-img"
+                                id="imgCompleted">
+                        </div>
+                        <img src="../images/status&approvalPhone.png" class="info__card-img">
+                        <h3 class="info__card-title">SMS Verification</h3>
+                    </div>
+                    <div class="info__card-footer
+                            info__card-footer--completed">
+                        <h3 class="info__card-title
+                                info__card-footer-title">completed</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="form__btn">Continue</button>
+        </div>
+    </div>
+</body>
+<script src="../js/mobile_menu.js"></script>
+
+</html>

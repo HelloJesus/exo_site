@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exontus v2</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+
+<body>
+    <!-- <div class="overlay" id="popup">
+            <div class="popup">
+                <div class="popup__text">Thank you for choosing Exontus! We have sent you a confirmation email.
+Please check your email (and your Spam folder as well).
+                </div>
+                <button class="popup__btn">OK</button>
+            </div>
+        </div> -->
+    <header>
+        <div class="header__inner header__inner--bg">
+            <div class="nav-wrapper row space-between">
+                <img src="../images/logo.svg" alt="" class="logo">
+                <nav class="nav row space-between">
+                    <div class="nav__item">
+                        <a href="" class="nav__link">HOME</a>
+                    </div>
+                    <ul class="nav__list row space-between">
+                        <li class="nav__item">
+                            <a href="" class="nav__link">CURRENCIES</a>
+                        </li>
+                        <li class="nav__item triangle-bottom">
+                            <p href="" class="nav__link">SERVICES</p>
+                            <ul class="triangle-bottom__select-list">
+                                <li class="triangle-bottom__list-item">
+                                    <a href="#">Buy</a>
+                                </li>
+                                <li class="triangle-bottom__list-item">
+                                    <a href="#">Sell</a>
+                                </li>
+                                <li class="triangle-bottom__list-item">
+                                    <a href="#">Exchange</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">ABOUT US</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">CONTACT</a>
+                        </li>
+                        <li class="nav__item nav__item-box row">
+                            <img src="../images/tg-img.png" class="nav__img">
+                            <a href="" class="nav__link">OUR BOT</a>
+                        </li>
+                    </ul>
+                    <div class="user-login" id="selectInput">
+                        <div class="nav__item user-login__btn">
+                            <img class="user-login__icon" src="../images/user_abuser.svg">
+                            <a class="nav__link">user abuser</a>
+                        </div>
+                        <ul class="select-list user-login__select-list" id="selectList">
+                            <li class="select__list-item">
+                                <a href="#">Profile</a>
+                            </li>
+                            <li class="select__list-item"><a href="#">User Verification</a></li>
+                            <li class="select__list-item"><a href="#">Log Out</a></li>
+                        </ul>
+                        <!-- <div class="nav__item login-link">
+                                <a href="" class="nav__link">LOG IN</a>
+                            </div> -->
+                    </div>
+                    <div class="nav__toggler">
+                        <span class="nav__toggler-line"></span>
+                        <span class="nav__toggler-line"></span>
+                        <span class="nav__toggler-line"></span>
+                    </div>
+                </nav>
+                <div class="nav-mobile">
+                    <div class="nav__item">
+                        <a href="" class="nav__link">HOME</a>
+                    </div>
+                    <ul class="nav__list-mobile">
+                        <li class="nav__item">
+                            <a href="" class="nav__link">CURRENCIES</a>
+                        </li>
+                        <li class="nav__item triangle-bottom">
+                            <p href="" class="nav__link">SERVICES</p>
+                            <ul class="triangle-bottom__select-list">
+                                <li class="triangle-bottom__list-item">
+                                    <a href="#">Buy</a>
+                                </li>
+                                <li class="triangle-bottom__list-item">
+                                    <a href="#">Sell</a>
+                                </li>
+                                <li class="triangle-bottom__list-item">
+                                    <a href="#">Exchange</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">ABOUT US</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">CONTACT</a>
+                        </li>
+                        <li class="nav__item nav__item-box row">
+                            <img src="../images/tg-img.png" class="nav__img">
+                            <a href="" class="nav__link">OUR BOT</a>
+                        </li>
+                    </ul>
+                    <div class="user-login" id="selectInput">
+                        <div class="nav__item user-login__btn">
+                            <img class="user-login__icon" src="../images/user_abuser.svg">
+                            <a class="nav__link">user abuser</a>
+                        </div>
+                        <ul class="select-list user-login__select-list" id="selectList">
+                            <li class="select__list-item">
+                                <a href="#">Profile</a>
+                            </li>
+                            <li class="select__list-item"><a href="#">User Verification</a></li>
+                            <li class="select__list-item"><a href="#">Log Out</a></li>
+                        </ul>
+                        <!-- <div class="nav__item login-link">
+                                                                        <a href="" class="nav__link">LOG IN</a>
+                                                                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="info-wrapper">
+        <div class="info">
+            <div class="info__bar">
+                <div class="info__groups row space-between">
+                    <div class="info__group">
+                        <h3 class="info__group-title used">
+                            Personal Info
+                            (Required)
+                        </h3>
+                    </div>
+                    <div class="info__group">
+                        <h3 class="info__group-title used">
+                            Questionnaire
+                            (Required)
+                        </h3>
+                    </div>
+                    <div class="info__group">
+                        <h3 class="info__group-title active">
+                            User Verification
+                            (Required)
+                        </h3>
+                    </div>
+                    <div class="info__group">
+                        <h3 class="info__group-title inactive">
+                            Status&Approval
+                        </h3>
+                    </div>
+                </div>
+                <div class="info__road info__road--width--m">
+
+                </div>
+            </div>
+
+            <h2 class="info__title info__title-verif">User Verification</h2>
+            <form action="#" method="POST" class="form form-person">
+                <ul class="form__list-text list-verif">
+                    <p>Please upload the required documents according to the
+                        table below</p>
+                    <li class="item__text item__text-verif">
+                        Please make sure images are in high quality,
+                        unobstracted, not cropped and they don’t exceed 3MB
+                        in size
+                    </li>
+                    <li class="item__text item__text-verif">Copies can be
+                        send in PNG, JPEG
+                        anf PDF format.
+                    </li>
+                </ul>
+                <div class="table-wrapper">
+                    <table class="table-user">
+                        <thead>
+                            <tr>
+                                <th class="table-user__th" scope="col">Level</th>
+                                <th class="table-user__th" scope="col">Between
+                                    Amount</th>
+                                <th class="table-user__th" scope="col">Required
+                                    Documents</th>
+                                <th class="table-user__th" scope="col">Documents
+                                    Uploaded</th>
+                                <th class="table-user__th" scope="col">Documents
+                                    Verified</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-user__td">Mini Exontus</td>
+                                <td class="table-user__td">0 - 1000</td>
+                                <td class="table-user__td">
+                                    One fo the following is required:
+                                    <ul class="table-user__list">
+                                        <li>Passport</li>
+                                        <li>ID Card Front & ID Card Back</li>
+                                        <li>Driving License Front & Driving
+                                            License Back</li>
+
+                                    </ul>
+                                </td>
+                                <td>
+                                    <span id="notComplete"></span>
+                                    <span id="complete"></span>
+                                </td>
+                                <td>
+                                    <span id="notComplete"></span>
+                                    <span id="complete"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-user__td">Super Exontus</td>
+                                <td class="table-user__td">1000 - 5000</td>
+                                <td class="table-user__td">
+                                    One fo the following is required:
+                                    <ul class="table-user__list">
+                                        <li>Utility Bill</li>
+                                        <li>Bank Statement</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <span id="notComplete"></span>
+                                    <span id="complete"></span>
+                                </td>
+                                <td>
+                                    <span id="notComplete"></span>
+                                    <span id="complete"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-user__td">Exontus Boss</td>
+                                <td class="table-user__td">5000 - 10.000</td>
+                                <td class="table-user__td">
+                                    One fo the following is required:
+                                    <ul class="table-user__list">
+                                        <li>Selfie</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <span id="notComplete"></span>
+                                    <span id="complete"></span>
+                                </td>
+                                <td>
+                                    <span id="notComplete"></span>
+                                    <span id="complete"></span>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td class="table-user__td
+                                    table-user__pre-last-td">Exontus
+                                    King</td>
+                                <td class="table-user__td">10.000 +</td>
+                                <td class="table-user__td center"><span class="table-user__line"></span>
+                                </td>
+                                <td class="table-user__td center"><span class="table-user__line"></span>
+                                </td>
+                                <td class="table-user__td center"><span class="table-user__line"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-user__last-td" colspan="5">
+                                    <div class="row space-between">
+                                        <label class="label-verif" for="typeDocument">
+                                            Type
+                                            <input class="input-verif" type="text" id="typeDocument"
+                                                name="typeDocument">
+                                            <div class="arrow arrow-verif">
+                                                <span class="arrow__line
+                                                    arrow__line--left"></span>
+                                                <span class="arrow__line
+                                                    arrow__line--right"></span>
+                                            </div>
+                                        </label>
+                                        <label class="label-verif" for="fileUserVerification">
+                                            Choose File
+                                            <input class="input-verif" type="file" accept=".png, .jpg, .jpeg"
+                                                name="fileUserVerification" id="fileUserVerification">
+                                            <div class="verif-pointers">
+                                                <span class="verif-pointer"></span>
+                                                <span class="verif-pointer"></span>
+                                                <span class="verif-pointer"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="form__btn form__btn-info">Next</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../js/mobile_menu.js"></script>
+
+</html>
